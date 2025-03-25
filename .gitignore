@@ -1,0 +1,13 @@
+/bitrix/*
+
+/upload/
+/vendor/
+
+*.pdf
+*.log
+*.txt
+*.sql
+*.doc
+*.docx
+*.xlsx
+
