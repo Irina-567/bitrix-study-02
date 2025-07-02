@@ -5,9 +5,9 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 }
 
 spl_autoload_register(function (string $class): void {
-    if (!str_contains($class, 'Otus')) {
-        return;
-    }
+//    if (!str_contains($class, 'Otus')) {
+//        return;
+//    }
 
     $class = str_replace('\\', '/', $class);
 
