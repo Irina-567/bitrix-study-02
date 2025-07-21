@@ -23,3 +23,13 @@ $eventManager->addEventHandler(
     ['UserTypes\MedicalBooking', 'GetUserTypeDescription']
 );
 
+$eventManager->addEventHandler(
+    'iblock',
+    'OnAfterIBlockElementUpdate',
+    ['Events\IblockHandler', 'onElementAfterUpdate']
+);
+
+$eventManager->addEventHandler("crm", "OnAfterCrmDealAdd", ['Events\CrmDealSyncHandler', "onCrmDealAdd"]);
+$eventManager->addEventHandler("crm", "OnAfterCrmDealUpdate", ['Events\CrmDealSyncHandler', "onCrmDealUpdate"]);
+$eventManager->addEventHandler("crm", "OnAfterCrmDealDelete", ['Events\CrmDealSyncHandler', "onCrmDealDelete"]);
+
