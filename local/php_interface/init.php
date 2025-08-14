@@ -12,6 +12,8 @@ if (class_exists('UserTypes\MedicalBooking')) {
     file_put_contents(__DIR__.'/debug.log', "Custom type loaded\n", FILE_APPEND);
 }
 
+include_once __DIR__ . '/classes/Dadata.php';
+
 use Bitrix\Main\EventManager;
 
 $eventManager = EventManager::getInstance();
