@@ -78,6 +78,4 @@ class CatflixStreamsTable extends DataManager
 
         ];
     }
-
-
 }

@@ -23,6 +23,13 @@ $eventManager->addEventHandler(
     ['UserTypes\MedicalBooking', 'GetUserTypeDescription']
 );
 
+//REST handlers
+$eventManager->addEventHandlerCompatible(
+    'rest',
+    'OnRestServiceBuildDescription',
+    ['Rest\\CatflixEvents', 'OnRestServiceBuildDescriptionHandler']
+);
+
 $eventManager->addEventHandler(
     'iblock',
     'OnAfterIBlockElementUpdate',
